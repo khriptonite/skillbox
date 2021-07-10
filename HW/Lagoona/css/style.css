@@ -1,0 +1,467 @@
+@font-face {
+    font-family: 'Muller Bold';
+    font-style: normal;
+    /* font-weight: 300; */
+    src: local(''),
+         url('/Lagoona/fonts/MullerBold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/Lagoona/fonts/MullerLight.woff') format('woff'); /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Muller Light';
+    font-style: normal;
+    /* font-weight: 300; */
+    src: local(''),
+         url('/Lagoona/fonts/MullerLight.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/Lagoona/fonts/MullerLight.woff2') format('woff'); /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Muller Medium';
+    font-style: normal;
+    /* font-weight: 300; */
+    src: local(''),
+         url('/Lagoona/fonts/MullerMedium.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/Lagoona/fonts/MullerMedium.woff') format('woff'); /* Modern Browsers */
+  }
+
+  @font-face {
+    font-family: 'Muller Regular';
+    font-style: normal;
+    /* font-weight: 300; */
+    src: local(''),
+         url('/Lagoona/fonts/MullerRegular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('/Lagoona/fonts/MullerRegular.woff') format('woff'); /* Modern Browsers */
+  }
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Muller Regular', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    padding-left: 20px;
+}
+
+.container {
+    max-width: 1168px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-heading {
+    margin: 0;
+    padding-left: 44px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.rectangle {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    padding-left: 20px;
+    background: url(/Lagoona/img/rectangle.png) center center no-repeat transparent;
+    transform: translateY(3px);
+}
+
+/* 1. LOGO HEADER */
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    height: 115px;
+}
+
+.header-tel {
+    font-family: 'Muller Bold';
+    font-size: 22px;
+    line-height: 32px;
+    color: #666666;
+}
+
+.logo-img {
+    width: 261px;
+    height: 54px;
+    margin-right: 20px;
+}
+
+.header-small-link {
+    margin-left: auto;
+}
+
+.header-small-arrow {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    background: url(/Lagoona/img/arrow.png) center center no-repeat transparent;
+    transform: translateY(3px);
+}
+
+.header-small {
+    font-size: 16px;
+    line-height: 32px;
+    color: #cc9933;
+}
+
+/* 2. NAV HEADER */
+
+.header-nav-list-items {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navigation {
+    background-color: white;
+    border-radius: 12px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav-link {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.nav-search {
+    margin-left: auto;
+    width: 355px;
+    height: 48px;
+    border: none;
+    border-radius: 15px;
+    background: url(/Lagoona/img/search.png) 310px center no-repeat;
+    background-color: #f1f1f1;
+}
+
+.nav-search::placeholder {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #bebebe;
+}
+
+/* 3. OFFER */
+
+.offer-container {
+    display: flex;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.main-reservation-container {
+    min-width: 518px;
+}
+
+.main-offer-container {
+    width: 595px;
+    height: 540px;
+    background: url(/Lagoona/img/2.0.png);
+}
+
+.main-offer-heading {
+    width: 330px;
+    font-family: 'Muller Bold';
+    margin: 0;
+    padding: 265px 0 40px 40px ;
+    font-size: 66px;
+    line-height: 58px;
+    color: white;
+}
+
+.main-offer-bottom {
+    display: flex;
+}
+
+.main-offer-price {
+    font-size: 35px;
+    line-height: 1;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 75px;
+    color: #a5a09d;
+}
+
+.main-offer-more {
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffcc66;
+}
+
+.main-offer {
+    min-width: 595px;
+}
+
+.main-reservation-input {
+    width: 518px;
+    height: 70px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+.main-reservation-input::placeholder {
+    font-size: 16px;
+    line-height: 32px;
+    color: #999999;
+}
+
+.main-reservation-btn {
+    font-family: 'Muller Bold';
+    font-size: 16px;
+    line-height: 32px;
+    width: 159px;
+    height: 70px;
+    border-radius: 12px;
+    background-color: #cc9933;
+    color: white;
+    border: none;
+
+}
+
+.main-reservation-available-num {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #cc9933;
+}
+
+.main-reservation-available {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #999999;
+    margin-left: 30px;
+}
+
+/* 4. ABOUT US */
+
+.container-about-us {
+    padding-top: 70px;
+}
+
+.about-us-description {
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 600;
+    margin: 0;
+    padding-left: 44px;
+    padding-right: 240px;
+    color: #666666;
+}
+
+/* 5. SERVICES */
+
+.container-services {
+    padding-top: 50px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-services-img{
+    height: 165px;
+}
+
+.services-item-description {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 110px 40px 41px;
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+}
+
+.services-heading {
+    font-family: 'Muller Medium';
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 300;
+    color: #cc9933;
+    padding-bottom: 20px;
+}
+
+.services-info {
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.services-item {
+    padding-bottom: 24px;
+    max-width: 573px;
+
+}
+
+/* 6. BENEFITS */
+
+.container-benefits {
+    padding-top: 68px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 45px;
+}
+
+.benefits-item {
+    height: 275px;
+    width: 275px;
+    padding: 45px;
+    background-color: white;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+.benefits-text {
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+}
+
+/* 7. HOTELS */
+
+.section-hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-hotels-img {
+    width: 373px;
+    height: 217px;
+}
+
+.section-hotels-item {
+    margin-bottom: 25px;
+}
+
+
+.section-hotels-description {
+    padding: 35px 45px 40px 45px;
+    background-color: white;
+    transform: translateY(-5px);
+    border-radius: 0 0 12px 12px;
+}
+
+.section-hotels-price {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.section-hotels-price-from {
+    font-size: 16px;
+    line-height: 32px;
+    color: #969696;
+}
+
+.section-hotels-price-sum {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #333333;
+    padding: 0 4px;
+}
+
+.section-hotels-price-night {
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+}
+
+.stars {
+    margin-left: auto;
+}
+
+.section-hotels-name {
+    font-size: 16px;
+    line-height: 1;
+    color: #333333;
+    padding-bottom: 15px;
+}
+
+.section-hotels-location {
+    font-size: 16px;
+    line-height: 1;
+    color: #999999;
+    padding-bottom: 20px;
+}
+
+.btn-hotels {
+    display: inline-block;
+    font-family: 'Muller Bold';
+    font-size: 16px;
+    line-height: 1;
+    border: 1px solid #cc9933;
+    padding: 12px 20px;
+    color: #cc9933;
+    border-radius: 12px;
+}
+
+.section-hotels-all {
+    width: 373px;
+    height: 440px;
+    background: url(/Lagoona/img/9.png) center center no-repeat transparent;
+}
+
+.section-hotels-others {
+    /* width: 373px;
+    height: 440px; */
+    color: white;
+    padding: 369px 0 0 40px;
+}
+
+.section-hotels-others-header {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+.section-hotels-others-rectangle {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+    margin-left: 25px;
+    background: url(/Lagoona/img/rectangle-2.png) center center no-repeat transparent;
+    transform: translateY(3px);
+}
